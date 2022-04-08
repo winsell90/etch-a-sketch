@@ -25,3 +25,8 @@ btn.classList.add('btn');
 btn.textContent = 'Clear sketch pad';
 buttonarea.appendChild(btn)
 
+for (let squares of square1) {
+btn.addEventListener('click', () => {
+  squares.classList.remove('etch');
+});
+}
