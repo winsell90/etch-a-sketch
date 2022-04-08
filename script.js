@@ -15,3 +15,12 @@ squares.addEventListener('mouseenter', () => {
   squares.classList.add('etch');
 })
 }
+
+let buttonarea = document.createElement('div');
+buttonarea.classList.add('buttons');
+document.body.appendChild(buttonarea)
+
+let btn = document.createElement('button')
+btn.textContent = 'click dis';
+buttonarea.appendChild(btn)
+

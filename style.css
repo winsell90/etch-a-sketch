@@ -1,4 +1,10 @@
-
+body {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .container {
 display: grid;
@@ -7,11 +13,19 @@ grid-template-columns: repeat(16, 5vw);
 grid-template-rows: repeat(16, 5vh);
 background-color: bisque;
 width: max-content;
-border-top: 40px solid red;
-border-right: 40px solid red;
-border-bottom: 80px solid red;
-border-left: 40px solid red;
-border-radius: 40px;
+margin-top: 5%;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 0;
+
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+margin-left: 5%;
+margin-right: 5%;
+margin-bottom: 0;
 }
 
 .etch {
