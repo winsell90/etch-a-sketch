@@ -4,8 +4,32 @@ let container = document.querySelector('.container');
 for (let i = 1; i < 257; i++) {
 let square = document.createElement('div');
 square.classList.add('squares');
-square.style.cssText = "border: 1px solid black; height: auto; width: 100%";
 container.appendChild(square)
+}
+
+function removeSquare() {
+  while (container.firstChild) {
+    container.removeChild(container.firstChild);
+  }
+}
+
+function newSketchPad(number) {
+  removeSquare();
+  container.style.gridTemplateColumns = `repeat(${number}, 1fr)`;
+  container.style.gridTemplateRows = `repeat(${number}, 1fr)`;
+  container.style.width = '70vw';
+  container.style.height = '70vw';
+  for (let i = 1; i < (number * number); i++) {
+    let squarelots = document.createElement('div');
+    squarelots.classList.add('squares');
+    container.appendChild(squarelots)
+}
+square2 = document.getElementsByClassName('squares');
+for (let squares of square2) {
+  squares.addEventListener('mouseenter', () => {
+    squares.classList.add('etch');
+  })
+  }
 }
 
 square1 = document.getElementsByClassName('squares');
@@ -51,3 +75,8 @@ alter.addEventListener('mousedown', () => {
 alter.addEventListener('mouseup', () => {
   alter.classList.remove('clicked');
 })
+
+alter.addEventListener('click', () => {
+  let input = prompt('how many rows?');
+  newSketchPad(input);
+});
