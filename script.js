@@ -21,6 +21,7 @@ buttonarea.classList.add('buttons');
 document.body.appendChild(buttonarea)
 
 let btn = document.createElement('button')
-btn.textContent = 'click dis';
+btn.classList.add('btn');
+btn.textContent = 'Clear sketch pad';
 buttonarea.appendChild(btn)
 

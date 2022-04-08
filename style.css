@@ -28,6 +28,13 @@ margin-right: 5%;
 margin-bottom: 0;
 }
 
+.btn {
+  background-color: white;
+  border-radius: 10px;
+  font-size: 3vw;
+  font-family: 'Righteous';
+}
+
 .etch {
   background-color: black;
 }
