@@ -30,3 +30,24 @@ btn.addEventListener('click', () => {
   squares.classList.remove('etch');
 });
 }
+
+btn.addEventListener('mousedown', () => {
+  btn.classList.add('clicked');
+})
+
+btn.addEventListener('mouseup', () => {
+  btn.classList.remove('clicked');
+})
+
+let alter = document.createElement('button')
+alter.classList.add('btn');
+alter.textContent = 'Alter sketch area';
+buttonarea.appendChild(alter);
+
+alter.addEventListener('mousedown', () => {
+  alter.classList.add('clicked');
+})
+
+alter.addEventListener('mouseup', () => {
+  alter.classList.remove('clicked');
+})

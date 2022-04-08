@@ -22,7 +22,6 @@ margin-bottom: 0;
 
 .buttons {
   display: flex;
-  justify-content: center;
 margin-left: 5%;
 margin-right: 5%;
 margin-bottom: 0;
@@ -37,4 +36,8 @@ margin-bottom: 0;
 
 .etch {
   background-color: black;
+}
+
+.clicked {
+  background: rgb(197, 187, 187);
 }
