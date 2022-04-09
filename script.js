@@ -82,9 +82,9 @@ alter.addEventListener('mouseup', () => {
 })
 
 alter.addEventListener('click', () => {
-  let input = prompt('how many rows?');
+  let input = prompt('Add rows and columns for a more detailed image. Enter a number up to 100!');
   if (input > 100 || isNaN(input)) {
-  alert('Only numbers and less than 100!');
+  alert('Only numbers and lower than 100!');
   } else {
   newSketchPad(input);
   }
