@@ -1,1 +1,3 @@
 # etch-a-sketch
+
+This was a difficult but satisying project! The initial stage was somewhat easier because the grid had a specific number of rows and columns. The first display is a fixed 16 x 16 grid. The second stage was much more difficult. I probably went about it in an overly complicated manner. Upon clicking the "alter sketch pad" button, a function runs to delete the 256 child elements that made the first grid. A prompt then appears, and the user enters a number that determines how many elements the sketch pad will now have. A custom grid is generated based on the number provided by the user. I used custom fonts from google and became more familiar with multile event listeners. 
