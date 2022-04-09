@@ -18,7 +18,7 @@ function newSketchPad(number) {
   container.style.gridTemplateColumns = `repeat(${number}, 1fr)`;
   container.style.gridTemplateRows = `repeat(${number}, 1fr)`;
   container.style.width = '70vw';
-  container.style.height = '70vw';
+  container.style.height = '70vh';
   for (let i = 1; i < (number * number); i++) {
     let squarelots = document.createElement('div');
     squarelots.classList.add('squares');
@@ -30,6 +30,11 @@ for (let squares of square2) {
     squares.classList.add('etch');
   })
   }
+  for (let squares of square2) {
+    btn.addEventListener('click', () => {
+      squares.classList.remove('etch');
+    });
+    }
 }
 
 square1 = document.getElementsByClassName('squares');
@@ -78,5 +83,10 @@ alter.addEventListener('mouseup', () => {
 
 alter.addEventListener('click', () => {
   let input = prompt('how many rows?');
+  if (input > 100 || isNaN(input)) {
+  alert('Only numbers and less than 100!');
+  } else {
   newSketchPad(input);
+  }
 });
+
