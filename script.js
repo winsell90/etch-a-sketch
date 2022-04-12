@@ -51,7 +51,7 @@ document.body.appendChild(buttonarea)
 
 let btn = document.createElement('button')
 btn.classList.add('btn');
-btn.textContent = 'Clear sketch pad';
+btn.textContent = 'Clear';
 buttonarea.appendChild(btn)
 
 for (let squares of square1) {
@@ -70,7 +70,7 @@ btn.addEventListener('mouseup', () => {
 
 let alter = document.createElement('button')
 alter.classList.add('btn');
-alter.textContent = 'Alter sketch area';
+alter.textContent = 'Alter';
 buttonarea.appendChild(alter);
 
 alter.addEventListener('mousedown', () => {
